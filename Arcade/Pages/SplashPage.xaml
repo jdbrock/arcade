@@ -1,0 +1,15 @@
+﻿<Page x:Class="Arcade.Pages.SplashPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	  Title="SplashPage">
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="arcade" FontSize="72" Foreground="White" TextAlignment="Center" />
+            <TextBlock Text="1.0" FontSize="18" Foreground="#20FFFFFF" TextAlignment="Center" />
+        </StackPanel>
+    </Grid>
+</Page>
