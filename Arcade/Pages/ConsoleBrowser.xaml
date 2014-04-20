@@ -7,7 +7,7 @@
       Title="Consoles"
       Foreground="White" FontFamily="Segoe UI Light" FontSize="24" FocusVisualStyle="{x:Null}">
     <Grid>
-        <ListBox Name="ctConsolesListBox" Background="Transparent" ItemsSource="{Binding Consoles}" Padding="50" BorderThickness="0" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+        <ListBox Name="ctConsolesListBox" Background="Transparent" ItemsSource="{Binding Consoles}" Padding="50" BorderThickness="0" ScrollViewer.VerticalScrollBarVisibility="Hidden" HorizontalContentAlignment="Center">
 
         </ListBox>
 

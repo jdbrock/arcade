@@ -7,9 +7,21 @@
       Title="Consoles"
       Foreground="White" FontFamily="Segoe UI Light" FontSize="24" FocusVisualStyle="{x:Null}">
     <Grid>
-        <ListBox Name="ctGamesListBox" Background="Transparent" ItemsSource="{Binding Games}" Padding="50" BorderThickness="0" DisplayMemberPath="DisplayName" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+        <Grid Margin="50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
-        </ListBox>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Grid.Row="0" FontSize="64" Text="{Binding Console.DisplayName}" Margin="7,0,0,0" />
+                <TextBlock Grid.Row="0" FontSize="18" Text="{Binding Games.Count, StringFormat={}{0} TITLES}" Margin="10,0,10,10" VerticalAlignment="Bottom" Foreground="#40FFFFFF" />
+            </StackPanel>
+
+            <ListBox Grid.Row="1" Name="ctGamesListBox" Background="Transparent" ItemsSource="{Binding Games}" BorderThickness="0" DisplayMemberPath="DisplayName" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+
+            </ListBox>
+        </Grid>
 
         <Viewbox Margin="10" MaxHeight="76" VerticalAlignment="Bottom" HorizontalAlignment="Right">
             <Canvas Width="76" Height="76" Clip="F1 M 0,0L 76,0L 76,76L 0,76L 0,0">
